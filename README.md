@@ -31,3 +31,7 @@ here I created food store website named Foodie Blog that helps the customer to f
 #CONTACT US 
 
 ![Screenshot_2022-08-31-16-48-34-68](https://user-images.githubusercontent.com/89571744/187669505-deae3ce0-f46b-4eea-81a5-a606377dd127.jpg)
+ 
+#Azure portal screenshot  
+
+![Screenshot_2022-08-31-17-27-00-14](https://user-images.githubusercontent.com/89571744/187673365-d48e95b4-bbcc-4cf4-8a43-a117fb532f5c.jpg)
