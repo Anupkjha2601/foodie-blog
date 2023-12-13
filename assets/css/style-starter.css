@@ -20232,6 +20232,7 @@ form.subscribe {
   background: var(--bg-grey);
   border-radius: 0;
   border-left: none;
+  color: #99917a;
 }
 
 .subscribe button.btn {
