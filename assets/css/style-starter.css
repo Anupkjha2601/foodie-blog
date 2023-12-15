@@ -10,6 +10,7 @@ Author URL: http://w3layouts.com
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -67,6 +68,14 @@ section {
   display: block;
 }
 
+header,
+main
+nav {
+  background-color: aqua;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -75,7 +84,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-color: #a19494;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -188,8 +197,8 @@ a:hover,
 button,
 button:hover {
   text-decoration: none;
-  transition: .5s all;
   -moz-transition: .5s all;
+  transition: .5s all;
 }
 
 a:not([href]) {
@@ -18052,9 +18061,11 @@ div#small-dialog iframe {
 a.footer-logo {
   margin: 0;
   padding: 0;
-  font-size: 28px;
+  font-size: 35px;
   color: var(--heading-color);
-  font-weight: bold;
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Rethink Sans', sans-serif;
 }
 
 a.footer-logo {
@@ -18150,12 +18161,13 @@ a.dropdown-item.active {
 }
 
 header {
-  background-color: var(--bg-color);
+  background-color: linen;
   padding: 0px;
   transition: all 0.4s ease 0s;
   height: 90px;
   display: grid;
   align-items: center;
+  border-radius: 15px;
   /* box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05); */
 }
 
@@ -18422,12 +18434,12 @@ button.search-btn:hover {
 
   .navbar .search-right {
     position: absolute;
-    right: 80px;
+    right: 20px;
     top: -3px;
   }
 
   .search:focus {
-    width: 230px !important;
+    width: 100px !important;
   }
 
   .nav-fixed .navbar-expand-lg .navbar-nav .nav-link {
@@ -18472,6 +18484,7 @@ button.search-btn:hover {
 /* search effect */
 .search-container {
   position: relative;
+  cursor: pointer;
   display: inline-block;
   height: 42px;
   width: 42px;
@@ -18483,20 +18496,25 @@ button.search-btn:hover {
 
 .searchbutton {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 18px;
   width: 100%;
   margin: 0;
   padding: 0;
   text-align: center;
-  right: 0;
   color: var(--bg-color);
 }
 
+
 .search:focus+.searchbutton {
-  transition-duration: 0.4s;
+  align-items: center;
+  cursor: pointer;
+  -o-transition-duration: 0.4s;
   -moz-transition-duration: 0.4s;
   -webkit-transition-duration: 0.4s;
-  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
   background-color: var(--heading-color);
   color: var(--bg-color);
   border-radius: 0 30px 30px 0;
@@ -18514,10 +18532,10 @@ button.search-btn:hover {
   width: 0;
   height: 100%;
   z-index: 10;
-  transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
   -moz-transition-duration: 0.4s;
   -webkit-transition-duration: 0.4s;
-  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
 
 .search:focus {
@@ -18528,7 +18546,7 @@ button.search-btn:hover {
 
 .expandright {
   left: auto;
-  right: 42px;
+  right: 40px;
   /* Button width-1px */
 }
 
@@ -18548,15 +18566,15 @@ button.search-btn:hover {
   color: #fff;
   border-radius: 8px;
   background: var(--primary-color);
-  transition: .5s all;
   -moz-transition: .5s all;
+  transition: .5s all;
 }
 
 .btn-style:hover {
   background: #e8191e;
   color: #fff;
-  transition: .5s all;
   -moz-transition: .5s all;
+  transition: .5s all;
 }
 
 /* //button style */
@@ -20204,6 +20222,7 @@ ul.twitter-feed a:hover {
 }
 
 form.subscribe {
+  border-radius: 15px;
   margin-top: 25px;
   position: relative;
   display: grid;
@@ -20261,6 +20280,9 @@ form.subscribe {
 
 /* footer section */
 .w3l-footer-29-main {
+  margin-top: 10px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
   background-image: url(../images/map.png);
   background-color: #0a0a0c;
   background-size: contain;
@@ -20423,11 +20445,11 @@ form.subscribe {
 /* inner-banner */
 .inner-banner {
   background: url(../images/inner-banner.jpg) no-repeat top;
-  background-size: cover;
+  -ms-background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  -ms-background-size: cover;
+  background-size: cover;
   position: relative;
   z-index: 0;
 }
