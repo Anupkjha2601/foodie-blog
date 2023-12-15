@@ -18546,7 +18546,8 @@ button.search-btn:hover {
 
 .expandright {
   left: auto;
-  right: 40px;
+  right: 30px;
+
   /* Button width-1px */
 }
 
