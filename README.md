@@ -1,6 +1,6 @@
  # **Final Project - Foodie Blog**
 This project is created by Anup Kumar jha. 
-Welcome to Foodie Blog, a delightful place to discover amazing recipes and genuine products at affordable prcies. This web project is crafted by Anpu Kumar Jha, aiming to provide a seamless exprience for food enthusiasts.
+Welcome to Foodie Blog, a delightful place to discover amazing recipes and genuine products at affordable prcies. This web project is crafted by Anup Kumar Jha, aiming to provide a seamless exprience for food enthusiasts.
 
 
  ## **My Website link**
