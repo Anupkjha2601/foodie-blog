@@ -18692,6 +18692,7 @@ ul.admin-list {
   position: relative;
   touch-action: manipulation;
   -moz-backface-visibility: hidden;
+  display: flex;
 }
 
 .owl-carousel .owl-stage:after {
@@ -18720,6 +18721,7 @@ ul.admin-list {
   float: left;
   -webkit-backface-visibility: hidden;
   -webkit-touch-callout: none;
+  display:flex;
 }
 
 .owl-carousel .owl-dots.disabled,
