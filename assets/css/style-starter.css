@@ -358,6 +358,10 @@ legend {
   white-space: normal;
 }
 
+.feedback{
+  margin:20px;
+}
+
 @media (max-width: 1200px) {
   legend {
     font-size: calc(1.275rem + 0.3vw);
