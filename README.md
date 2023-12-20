@@ -8,6 +8,7 @@ Welcome to Foodie Blog, a delightful place to discover amazing recipes and genui
 [Foodie Blog](https://thankful-smoke-06e585e10.1.azurestaticapps.net/)
  
 
+
 ## **Technologies Used**
 - ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=flat)
 - ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white&style=flat)
@@ -15,6 +16,7 @@ Welcome to Foodie Blog, a delightful place to discover amazing recipes and genui
 
 
 ## **Screenshots**
+
 
 ### Home Page
 
@@ -93,3 +95,4 @@ If you would like to contribute to Foodie Blog, follow these steps:
 
 Feel free to explore, contribute, and enjoy Foodie Blog! 
 If you encounter any issues, please submit them in the [Issues](https://github.com/Anupkjha2601/foodie-blog/issues) section.
+
