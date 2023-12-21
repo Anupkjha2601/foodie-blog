@@ -10745,6 +10745,13 @@ button.bg-dark:focus {
     text-align: center !important;
   }
 }
+@media (max-width:400px) {
+
+  .search-container{
+    margin-left: 50px;
+  }
+  
+}
 
 @media (min-width: 768px) {
   .text-md-left {
@@ -17435,6 +17442,7 @@ p.white {
   padding: 0px 0;
   margin-left: 10px;
   margin-left: 10px;
+  margin-right: 35px;
   color: var(--heading-color);
   margin-top: 4px;
 }
@@ -18197,7 +18205,7 @@ a.dropdown-item.active {
 }
 
 header {
-  background-color: linen;
+  background-color: gray;
   padding: 0px;
   transition: all 0.4s ease 0s;
   height: 90px;
@@ -18251,7 +18259,7 @@ nav ul li a:hover {
 }
 
 .navbar .search-right {
-  margin: 0 10px 0 10px;
+  margin-left: 100px;
 }
 
 .navbar form.search-box {
@@ -18528,7 +18536,9 @@ button.search-btn:hover {
   vertical-align: bottom;
   background: var(--heading-color);
   border-radius: 50%;
+  margin-right: 10px;
 }
+
 
 .searchbutton {
   position: absolute;
