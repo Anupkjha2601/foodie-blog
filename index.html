@@ -21,25 +21,22 @@
     content="Discover culinary delights on our Foodie Blog, your go-to food store website. We assist customers in finding budget-friendly recipes with high-quality, genuine products." />
   <meta name="twitter:image" content="foodie-blog.png" />
   <link rel="stylesheet" href="assets/css/style-starter.css" />
-  <!-- google-fonts -->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" />
+
+  <!-- Google-fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" />
 
 
   <!-- Google font for blog name -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Kanit&family=Poppins:wght@400;500&family=Rethink+Sans:wght@600&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Poppins:wght@400;500&family=Rethink+Sans:wght@600&display=swap" rel="stylesheet" />
 
   <!-- Google fonts for naviation buttons -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Rethink+Sans:wght@600&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Rethink+Sans:wght@600&display=swap" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -52,49 +49,108 @@
             Foodi<span>e</span> Blog<i class="fas fa-utensils"></i>
           </a>
         </h1>
+
         <!-- if logo is image enable this   
     <a class="navbar-brand" href="#index.html">
         <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
     </a> -->
         
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav mx-lg-auto" style="
-                font-family: 'Poppins', sans-serif;
-                font-family: 'Rethink Sans', sans-serif;
-                font-size: 20px;
-              ">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-        <!-- search button -->
-        <div class="search-right ml-lg-3">
-          <div class="search-container">
-            <form action="/search" method="get">
-              <input class="search expandright" id="searchright" type="search" name="q"
-                placeholder="Hungry? Search for Food Here" />
-              <label class="button searchbutton" for="searchright"><i class="fas fa-search"></i></label>
-            </form>
-          </div>
-        </div>
-
         <button class="navbar-toggler collapsed bg-gradient" type="button" data-toggle="collapse"
           data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
           aria-label="Toggle navigation">
           <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
           <span class="navbar-toggler-icon fa icon-close fa-times"></span>
         </button>
+
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mx-lg-auto" style="font-family: 'Poppins', sans-serif; font-family: 'Rethink Sans', sans-serif; font-size: 20px">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signup.html">Sign Up</a>
+                </li>
+                    </ul>
+                </div>
+                <!-- search button -->
+                <div class="search-right ml-lg-3">
+                    <div class="search-container">
+                        <form action="/search" method="get">
+                            <input class="search expandright" id="searchright" type="search" name="q"
+                                placeholder="Hungry? Search for Food Here">
+                            <label class="button searchbutton" for="searchright"><i class="fas fa-search"></i></label>
+                        </form>
+                    </div>
+                </div>
+                <!-- //search button -->
+                <!-- toggle switch for light and dark theme -->
+                <div class="cont-ser-position">
+                    <nav class="navigation">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="mode-container">
+                                    <i class="gg-sun"></i>
+                                    <i class="gg-moon"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
+                </div>
+                <!-- //toggle switch for light and dark theme -->
+            </nav>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mx-lg-auto" style="
+                font-family: 'Poppins', sans-serif;
+                font-family: 'Rethink Sans', sans-serif;
+                font-size: 20px;">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html"
+                  >Home<span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Feedback.html">Feedback</a>
+              </li>
+            </ul>
+        </div>
+        <!-- search button -->
+        <!-- <div class="search-right ml-lg-3">
+          <div class="search-container">
+            <form action="/search" method="get">
+              <label class="button searchbutton" for="searchright"><i class="fas fa-search"></i></label>
+              <input class="search expandright" id="searchright" type="search" name="q" placeholder="Hungry? Search for Food Here" />
+            </form>
+          </div>
+        </div> -->
+
+        <!-- <button class="navbar-toggler collapsed bg-gradient" type="button" data-toggle="collapse"
+          data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+          <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+        </button> -->
         <!-- //search button -->
         <!-- toggle switch for light and dark theme -->
-        <div class="cont-ser-position">
+        <!-- <div class="cont-ser-position">
           <nav class="navigation">
             <div class="theme-switch-wrapper">
               <label class="theme-switch" for="checkbox">
@@ -102,7 +158,7 @@
                 <div class="mode-container">
                   <i class="gg-sun"></i>
                   <i class="gg-moon"></i>
-                </div>
+                </div> -->
               </label>
             </div>
           </nav>
@@ -132,6 +188,7 @@
               </ul>
               <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua.</p>
+
             </div>
           </div>
         </div>

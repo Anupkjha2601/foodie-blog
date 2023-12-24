@@ -358,6 +358,10 @@ legend {
   white-space: normal;
 }
 
+.feedback{
+  margin:20px;
+}
+
 @media (max-width: 1200px) {
   legend {
     font-size: calc(1.275rem + 0.3vw);
@@ -18577,10 +18581,10 @@ button.search-btn:hover {
   width: 0;
   height: 100%;
   z-index: 10;
-  -o-transition-duration: 0.4s;
-  -moz-transition-duration: 0.4s;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
+  -o-transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 
 .search:focus {
