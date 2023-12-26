@@ -4559,11 +4559,18 @@ input[type="button"].btn-block {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  transition: border-color 0.3s ease-in-out;
+  color: #000;
+  text-decoration: none;
+
 }
 
 .nav-link:hover,
 .nav-link:focus {
   text-decoration: none;
+  border-color: #ff4c4c;
 }
 
 .nav-link.disabled {
@@ -4646,6 +4653,10 @@ input[type="button"].btn-block {
   align-items: center;
   justify-content: space-between;
   padding: 1.2rem 1rem;
+  background-color: #ffffff;
+  border: 1ps solid #dee2e6;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar .container,
