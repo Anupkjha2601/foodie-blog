@@ -29,23 +29,34 @@
             </div>
             <button type="submit" class="login-btn">Login</button>
             <p class="signup-link">Don't have an account? <a href="signup.html">Sign Up</a></p>
-            </button>
         </form>
     </div>
+
     <script>
         // Simulated in-memory database
+        const users = [];
+
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Perform login logic here, check credentials against the in-memory database, etc.
+            // If successful, navigate to the desired page.
+        });
+
         document.getElementById('signup-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const fullname = document.getElementById('fullname').value;
-    const newEmail = document.getElementById('new-email').value;
-    const newPassword = document.getElementById('new-password').value;
+            event.preventDefault();
+            const fullname = document.getElementById('fullname').value;
+            const newEmail = document.getElementById('new-email').value;
+            const newPassword = document.getElementById('new-password').value;
 
-    // Add new user to the in-memory database
-    users.push({ email: newEmail, password: newPassword, fullname: fullname });
+            // Add new user to the in-memory database
+            users.push({ email: newEmail, password: newPassword, fullname: fullname });
 
-    alert('Signup successful! Welcome, ' + fullname);
-    window.location.href = 'about.html';
-});
+            alert('Signup successful! Welcome, ' + fullname);
+            window.location.href = 'about.html';
+        });
     </script>
 </body>
 </html>
