@@ -18274,7 +18274,8 @@ nav ul li a:hover {
 }
 
 .navbar .search-right {
-  margin-left: 100px;
+  margin-right: 20px;
+
 }
 
 .navbar form.search-box {
@@ -18461,8 +18462,9 @@ button.search-btn:hover {
 
   .cont-ser-position {
     position: absolute;
-    right: 50px;
+    left: 73%;
     top: 4px;
+    
   }
 
   .navbar {
@@ -18513,7 +18515,7 @@ button.search-btn:hover {
 
 @media only screen and (max-width: 480px) {
   .cont-ser-position {
-    right: 45px;
+     left: 64%;
   }
 
   .search:focus {
@@ -18521,7 +18523,7 @@ button.search-btn:hover {
   }
 
   .navbar .search-right {
-    right: 72px;
+    right: 15px;
   }
 }
 
@@ -18531,7 +18533,7 @@ button.search-btn:hover {
   }
 
   .navbar .search-right {
-    right: 68px;
+    right: 8px;
   }
 
   .navbar .navbar-brand {
@@ -21810,6 +21812,14 @@ p.count-text {
     font-size: 22px;
     line-height: 35px;
   }
+}
+
+@media screen and (max-width: 481px) {
+  #tooogle {
+margin-right: 60px;
+  }
+
+
 }
 
 /* //team section */
