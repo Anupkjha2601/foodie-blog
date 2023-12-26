@@ -74,15 +74,17 @@
                     </ul>
                 </div>
                 <!-- search button -->
-                <div class="search-right ml-lg-3">
-                    <div class="search-container">
-                        <form action="/search" method="get">
-                            <input class="search expandright" id="searchright" type="search" name="q"
-                                placeholder="Hungry? Search for Food Here">
-                            <label class="button searchbutton" for="searchright"><i class="fas fa-search"></i></label>
-                        </form>
-                    </div>
-                </div>
+              <div class="search-right ml-lg-3">
+    <div class="search-container">
+        <form action="/search" method="get">
+            <input class="search expandright" id="searchright" type="search" name="q" placeholder="Hungry? Search for Food Here" aria-label="Search">
+            <label class="button searchbutton" for="searchright">
+                <i class="fas fa-search" aria-hidden="true"></i>
+            </label>
+        </form>
+    </div>
+</div>
+
                 <!-- //search button -->
                 <!-- toggle switch for light and dark theme -->
                 <div class="cont-ser-position">
@@ -105,17 +107,19 @@
     <!--//header-->
 
      <!-- inner banner -->
-     <section class="inner-banner py-5">
-        <div class="w3l-breadcrumb py-lg-5">
-            <div class="container pt-sm-5 pt-4 pb-sm-4">
-                <h4 class="inner-text-title font-weight-bold pt-5">Feedback</h4>
-                <ul class="breadcrumbs-custom-path">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active"><span class="fa fa-chevron-right mx-2" aria-hidden="true"></span>Feedback</li>
-                </ul>
-            </div>
+    <section class="inner-banner py-5">
+    <div class="w3l-breadcrumb py-lg-5">
+        <div class="container pt-sm-5 pt-4 pb-sm-4">
+            <h4 class="inner-text-title font-weight-bold pt-5" style="font-family: 'Poppins', sans-serif; font-size: 24px;">Feedback</h4>
+            <ul class="breadcrumbs-custom-path" style="list-style: none; display: flex; align-items: center;">
+                <li style="font-size: 14px;"><a href="index.html">Home</a></li>
+                <li style="font-size: 14px; margin: 0 5px;"><span class="fa fa-chevron-right" aria-hidden="true"></span></li>
+                <li class="active" style="font-size: 14px;">Feedback</li>
+            </ul>
         </div>
-    </section>
+    </div>
+</section>
+
     <!-- //inner banner -->
 
     <!-- Info -->
@@ -126,27 +130,29 @@
     <!-- //Info-->
 
     <!-- Feedback form-->
-    <div class="form-inner-cont mx-auto feedback" style="max-width:800px; border: 2px solid black; border-radius: 30px; padding: 20px;">
-        <h3 class="title-style text-center mb-4" style="font-family: 'Poppins', sans-serif;
-        font-family: 'Rethink Sans', sans-serif; font-size: 35px">Share Your Culinary Experience!</h3>
-        <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="signin-form">
-            <div class="row align-form-map">
-                <div class="col-sm-6 form-input">
-                    <input type="text" name="w3lName" id="w3lName" placeholder="Name" / style="border: 1px solid black;">
-                </div>
-                <div class="col-sm-6 form-input">
-                    <input type="email" name="w3lSender" id="w3lSender" placeholder="Email" required="" / style="border: 1px solid black;">
-                </div>
+   <div class="form-inner-cont mx-auto feedback" style="max-width:800px; border: 2px solid #000; border-radius: 30px; padding: 20px;">
+    <h3 class="title-style text-center mb-4" style="font-family: 'Poppins', sans-serif; font-size: 35px;">Share Your Culinary Experience!</h3>
+    <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="signin-form">
+        <div class="row align-form-map">
+            <div class="col-sm-6 form-input">
+                <label for="w3lName">Name:</label>
+                <input type="text" name="w3lName" id="w3lName" placeholder="Name" required style="border: 2px solid #000; border-radius: 5px;">
             </div>
-            <div class="form-input">
-                <textarea placeholder="Message" name="w3lMessage" id="w3lMessage" required="" style="border: 1px solid black;"></textarea>
+            <div class="col-sm-6 form-input">
+                <label for="w3lSender">Email:</label>
+                <input type="email" name="w3lSender" id="w3lSender" placeholder="Email" required style="border: 2px solid #000; border-radius: 5px;">
             </div>
-            <div class="submit text-right">
-                <button type="submit" class="btn btn-style">Submit
-                    Feedback</button>
-            </div>
-        </form>
-    </div>
+        </div>
+        <div class="form-input">
+            <label for="w3lMessage">Message:</label>
+            <textarea placeholder="Message" name="w3lMessage" id="w3lMessage" required style="border: 2px solid #000; border-radius: 5px;"></textarea>
+        </div>
+        <div class="submit text-right">
+            <button type="submit" class="btn btn-style">Submit Feedback</button>
+        </div>
+    </form>
+</div>
+
 
     <!-- //Feedback Form-->
     

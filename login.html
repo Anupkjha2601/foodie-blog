@@ -48,5 +48,63 @@
     </form>
     <div class="sign-txt">Not yet a member? <a href="signup.html">Signup now</a></div>
   </div>
+=======
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- Favicon Image -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <div class="input-group">
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember me</label>
+            </div>
+            <div class="input-group">
+                <a href="#" class="forgot-password">Forgot your password?</a>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+            <p class="signup-link">Don't have an account? <a href="signup.html">Sign Up</a></p>
+        </form>
+    </div>
+
+    <script>
+        // Simulated in-memory database
+        const users = [];
+
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Perform login logic here, check credentials against the in-memory database, etc.
+            // If successful, navigate to the desired page.
+        });
+
+        document.getElementById('signup-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const fullname = document.getElementById('fullname').value;
+            const newEmail = document.getElementById('new-email').value;
+            const newPassword = document.getElementById('new-password').value;
+
+            // Add new user to the in-memory database
+            users.push({ email: newEmail, password: newPassword, fullname: fullname });
+
+            alert('Signup successful! Welcome, ' + fullname);
+            window.location.href = 'about.html';
+        });
+    </script>
 </body>
 </html>
