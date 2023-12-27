@@ -11098,7 +11098,8 @@ a.text-dark:focus {
   --secondary-color: #47cf73;
   --font-color: #b7b7b7;
   --bg-color: #171717;
-  --heading-color: #fdfffc;
+  --feedback-text:#fdfffc;
+  /* --heading-color: #fdfffc; */
   --footer-color: #0e0e0e;
   --footer-cpy-color: #060606;
   --border-color-light: rgba(255, 255, 255, 0.2);
@@ -18565,7 +18566,8 @@ button.search-btn:hover {
   margin: 0;
   padding: 0;
   text-align: center;
-  color: var(--bg-color);
+  /* color: var(--bg-color); */
+  color: #fff;
 }
 
 .search:focus+.searchbutton {
@@ -19215,7 +19217,7 @@ button.owl-next {
 
 /* title style */
 h3.title-style {
-  color: var(--heading-color);
+  color: var(--feedback-text);
   font-size: 35px;
   line-height: 45px;
   font-weight: bold;
