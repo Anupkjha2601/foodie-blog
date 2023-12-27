@@ -19,10 +19,10 @@ This project welcomes contributions from the community. Before contributing, ple
     git checkout -b feature/your-contribution
     ```
 
-4. Make your changes and ensure the project is still working correctly.
-   To get the web app up and running, you need to open the `index.html` in the browser.
-   To make your development process more convenient I'd recommend to use [Live Server on VS Code](https://www.geeksforgeeks.org/how-to-enable-live-server-on-visual-studio-code/)
-
+4. Make your changes and ensure the project is still working correctly. To get the web app up and running, you need to:
+   - Open the `index.html` file in a web browser.
+   - Install any dependencies by running `npm install` (if applicable).
+   - For a more convenient development process, consider using [Live Server on VS Code](https://www.geeksforgeeks.org/how-to-enable-live-server-on-visual-studio-code/).
 
 5. Commit your changes.
 
@@ -37,7 +37,6 @@ This project welcomes contributions from the community. Before contributing, ple
     ```
 
 7. Create a pull request on the main repository.
-
 
 ## Issue Tracker
 
