@@ -11,25 +11,31 @@
 
   <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="Foodie Blog">
-  <meta property="og:description" content="Discover culinary delights on our Foodie Blog, your go-to food store website. We assist customers in finding budget-friendly recipes with high-quality, genuine products.">
+  <meta property="og:description"
+    content="Discover culinary delights on our Foodie Blog, your go-to food store website. We assist customers in finding budget-friendly recipes with high-quality, genuine products.">
   <meta property="og:image" content="foodie-blog.png">
   <meta property="og:url" content="https://thankful-smoke-06e585e10.1.azurestaticapps.net/">
 
   <!-- Twitter Card Meta Tags (Optional, for Twitter sharing) -->
   <meta name="twitter:card" content="https://thankful-smoke-06e585e10.1.azurestaticapps.net/">
   <meta name="twitter:title" content="Foodie Blog">
-  <meta name="twitter:description" content="Discover culinary delights on our Foodie Blog, your go-to food store website. We assist customers in finding budget-friendly recipes with high-quality, genuine products.">
+  <meta name="twitter:description"
+    content="Discover culinary delights on our Foodie Blog, your go-to food store website. We assist customers in finding budget-friendly recipes with high-quality, genuine products.">
   <meta name="twitter:image" content="foodie-blog.png">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/css/style-starter.css">
 
   <!-- Google Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit&family=Poppins:wght@400;500&family=Rethink+Sans:wght@600&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Rethink+Sans:wght@600&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Kanit&family=Poppins:wght@400;500&family=Rethink+Sans:wght@600&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Rethink+Sans:wght@600&display=swap">
 </head>
 
 
@@ -37,18 +43,26 @@
   <!--header-->
   <header id="site-header" class="fixed-top">
     <div class="container">
-      <nav class="navbar navbar-expand-lg stroke">
+      <nav class="navbar navbar-expand-lg stroke" style="border-radius: 10px; padding: 10px 10px;">
         <h1>
           <a class="navbar-brand" href="index.html">
             Foodi<span>e</span> Blog<i class="fas fa-utensils"></i>
           </a>
         </h1>
-
         <!-- if logo is image enable this   
     <a class="navbar-brand" href="#index.html">
         <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
     </a> -->
-        
+        <script>
+          let colors=['#f58720','#34b4eb','pink','#20f575'];
+          let i=0;
+          let a=document.getElementById('site-header');
+          a.style.backgroundColor="black";
+          setInterval(() => {
+            a.style.backgroundColor=colors[i];
+            i=(i+1)%colors.length;
+          }, 2000);
+        </script>
         <button class="navbar-toggler collapsed bg-gradient" type="button" data-toggle="collapse"
           data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
           aria-label="Toggle navigation">
@@ -57,77 +71,76 @@
         </button>
 
 
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav mx-lg-auto" style="font-family: 'Poppins', sans-serif; font-family: 'Rethink Sans', sans-serif; font-size: 20px">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.html">Login</a>
-                    </li>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="signup.html">Sign Up</a>
-                </li>
-                    </ul>
-                </div>
-                <!-- search button -->
-                <div id="search" class="search-right  ml-lg-5  ">
-                    <div class="search-container">
-                        <form action="/search" method="get">
-                            <input class="search expandright" id="searchright" type="search" name="q"
-                                placeholder="Hungry? Search for Food Here">
-                            <label class="button searchbutton" for="searchright"><i class="fas fa-search"></i></label>
-                        </form>
-                    </div>
-                </div>
-                <!-- //search button -->
-                <!-- toggle switch for light and dark theme -->
-                <div  class="cont-ser-position mr-3">
-                    <nav class="navigation">
-                        <div id="tooogle" class="theme-switch-wrapper">
-                            <label class="theme-switch" for="checkbox">
-                                <input type="checkbox" id="checkbox">
-                                <div class="mode-container">
-                                    <i class="gg-sun"></i>
-                                    <i class="gg-moon"></i>
-                                </div>
-                            </label>
-                        </div>
-                    </nav>
-                </div>
-                <!-- //toggle switch for light and dark theme -->
-            </nav>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav mx-lg-auto" style="
+          <ul class="navbar-nav mx-lg-auto"
+            style="font-family: 'Poppins', sans-serif; font-family: 'Rethink Sans', sans-serif; font-size: 20px">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="signup.html">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+        <!-- search button -->
+        <div id="search" class="search-right  ml-lg-5  ">
+          <div class="search-container">
+            <form action="/search" method="get">
+              <input class="search expandright" id="searchright" type="search" name="q"
+                placeholder="Hungry? Search for Food Here">
+              <label class="button searchbutton" for="searchright"><i class="fas fa-search"></i></label>
+            </form>
+          </div>
+        </div>
+        <!-- //search button -->
+        <!-- toggle switch for light and dark theme -->
+        <div class="cont-ser-position mr-3">
+          <nav class="navigation">
+            <div id="tooogle" class="theme-switch-wrapper">
+              <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox">
+                <div class="mode-container">
+                  <i class="gg-sun"></i>
+                  <i class="gg-moon"></i>
+                </div>
+              </label>
+            </div>
+          </nav>
+        </div>
+        <!-- //toggle switch for light and dark theme -->
+      </nav>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mx-lg-auto" style="
                 font-family: 'Poppins', sans-serif;
                 font-family: 'Rethink Sans', sans-serif;
                 font-size: 20px;">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html"
-                  >Home<span class="sr-only">(current)</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Feedback.html">Feedback</a>
-              </li>
-            </ul>
-        </div>
-        <!-- search button -->
-        <!-- <div class="search-right ml-lg-3">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Feedback.html">Feedback</a>
+          </li>
+        </ul>
+      </div>
+      <!-- search button -->
+      <!-- <div class="search-right ml-lg-3">
           <div class="search-container">
             <form action="/search" method="get">
               <label class="button searchbutton" for="searchright"><i class="fas fa-search"></i></label>
@@ -136,15 +149,15 @@
           </div>
         </div> -->
 
-        <!-- <button class="navbar-toggler collapsed bg-gradient" type="button" data-toggle="collapse"
+      <!-- <button class="navbar-toggler collapsed bg-gradient" type="button" data-toggle="collapse"
           data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
           aria-label="Toggle navigation">
           <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
           <span class="navbar-toggler-icon fa icon-close fa-times"></span>
         </button> -->
-        <!-- //search button -->
-        <!-- toggle switch for light and dark theme -->
-        <!-- <div class="cont-ser-position">
+      <!-- //search button -->
+      <!-- toggle switch for light and dark theme -->
+      <!-- <div class="cont-ser-position">
           <nav class="navigation">
             <div class="theme-switch-wrapper">
               <label class="theme-switch" for="checkbox">
@@ -153,265 +166,265 @@
                   <i class="gg-sun"></i>
                   <i class="gg-moon"></i>
                 </div> -->
-              </label>
-            </div>
-          </nav>
-        </div>
-        <!-- //toggle switch for light and dark theme -->
-      </nav>
+      </label>
+    </div>
+    </nav>
+    </div>
+    <!-- //toggle switch for light and dark theme -->
+    </nav>
     </div>
   </header>
   <!--//header-->
 
   <!-- banner blog section -->
-  <section class="w3l-banner-blog py-5">
-    <div class="w3l-main-blog py-4">
-      <div class="owl-blog owl-carousel owl-theme" style="display:flex">
-        <div class="item" style="display:flex">
-          <div class="news-img position-relative" style="display: grid; height:inherit">
-            <a href="blog-single.html"><img src="assets/images/banner-blog1.jpg" class="img-fluid img-responsive"
-                alt="news image"></a>
-            <div class="title-wrap">
-              <h4 class="title"><a href="blog-single.html">Happiness is an extra scoop of a soup</a></h4>
-              <ul class="admin-list mt-2 mb-4">
-                <li><a href="#blog"><i class="far fa-user"></i>Mob Joe
-                  </a></li>
-                <li><a href="#blog"><i class="far fa-heart"></i>12 Likes</a></li>
-                <li><a href="#blog"><i class="far fa-comment-dots"></i>9 Comments</a>
-                </li>
-              </ul>
-              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.</p>
+  <div class="item-container">
+    <section class="w3l-banner-blog py-5" style="margin-top: 20px;">
+      <div class="w3l-main-blog py-4">
+        <div class="owl-blog owl-carousel owl-theme" style="display:flex">
+          <div class="item" style="display:flex">
+            <div class="news-img position-relative" style="display: grid; height:inherit">
+              <a href="blog-single.html"><img src="assets/images/banner-blog1.jpg" class="img-fluid img-responsive"
+                  alt="news image"></a>
+              <div class="title-wrap">
+                <h4 class="title"><a href="blog-single.html">Happiness is an extra scoop of a soup</a></h4>
+                <ul class="admin-list mt-2 mb-4">
+                  <li><a href="#blog"><i class="far fa-user"></i>Mob Joe
+                    </a></li>
+                  <li><a href="#blog"><i class="far fa-heart"></i>12 Likes</a></li>
+                  <li><a href="#blog"><i class="far fa-comment-dots"></i>9 Comments</a>
+                  </li>
+                </ul>
+                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.</p>
 
+              </div>
             </div>
           </div>
-        </div>
-        <div class="item" style="display:flex">
-          <div class="news-img" style="display: grid; height:inherit">
-            <a href="blog-single.html"><img src="assets/images/banner-blog2.jpg" class="img-fluid img-responsive"
-                alt="news image"></a>
-            <div class="title-wrap">
-              <h4 class="title"><a href="blog-single.html">Barbecue grilled chicken & Sauce</a></h4>
-              <ul class="admin-list mt-2 mb-4">
-                <li><a href="#blog"><i class="far fa-user"></i>Olive Yew
-                  </a></li>
-                <li><a href="#blog"><i class="far fa-heart"></i>18 Likes</a></li>
-                <li><a href="#blog"><i class="far fa-comment-dots"></i>8 Comments</a>
-                </li>
-              </ul>
-              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.</p>
+          <div class="item" style="display:flex">
+            <div class="news-img" style="display: grid; height:inherit">
+              <a href="blog-single.html"><img src="assets/images/banner-blog2.jpg" class="img-fluid img-responsive"
+                  alt="news image"></a>
+              <div class="title-wrap">
+                <h4 class="title"><a href="blog-single.html">Barbecue grilled chicken & Sauce</a></h4>
+                <ul class="admin-list mt-2 mb-4">
+                  <li><a href="#blog"><i class="far fa-user"></i>Olive Yew
+                    </a></li>
+                  <li><a href="#blog"><i class="far fa-heart"></i>18 Likes</a></li>
+                  <li><a href="#blog"><i class="far fa-comment-dots"></i>8 Comments</a>
+                  </li>
+                </ul>
+                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="item" style="display:flex">
-          <div class="news-img" style="display: grid; height:inherit">
-            <a href="blog-single.html"><img src="assets/images/banner-blog3.jpg" class="img-fluid img-responsive"
-                alt="news image"></a>
-            <div class="title-wrap">
-              <h4 class="title"><a href="blog-single.html">Delicious pizza with mozzarella cheese</a></h4>
-              <ul class="admin-list mt-2 mb-4">
-                <li><a href="#blog"><i class="far fa-user"></i>Patty Joe
-                  </a></li>
-                <li><a href="#blog"><i class="far fa-heart"></i>14 Likes</a></li>
-                <li><a href="#blog"><i class="far fa-comment-dots"></i>5 Comments</a>
-                </li>
-              </ul>
-              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.</p>
+          <div class="item" style="display:flex">
+            <div class="news-img" style="display: grid; height:inherit">
+              <a href="blog-single.html"><img src="assets/images/banner-blog3.jpg" class="img-fluid img-responsive"
+                  alt="news image"></a>
+              <div class="title-wrap">
+                <h4 class="title"><a href="blog-single.html">Delicious pizza with mozzarella cheese</a></h4>
+                <ul class="admin-list mt-2 mb-4">
+                  <li><a href="#blog"><i class="far fa-user"></i>Patty Joe
+                    </a></li>
+                  <li><a href="#blog"><i class="far fa-heart"></i>14 Likes</a></li>
+                  <li><a href="#blog"><i class="far fa-comment-dots"></i>5 Comments</a>
+                  </li>
+                </ul>
+                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="item" style="display:flex">
-          <div class="news-img" style="display: grid; height:inherit">
-            <a href="blog-single.html"><img src="assets/images/banner-blog6.jpg" class="img-fluid img-responsive"
-                alt="news image"></a>
-            <div class="title-wrap">
-              <h4 class="title"><a href="blog-single.html">How to make a quick and easy breakfast?</a></h4>
-              <ul class="admin-list mt-2 mb-4">
-                <li><a href="#blog"><i class="far fa-user"></i>Mreen Blo
-                  </a></li>
-                <li><a href="#blog"><i class="far fa-heart"></i>13 Likes</a></li>
-                <li><a href="#blog"><i class="far fa-comment-dots"></i>6 Comments</a>
-                </li>
-              </ul>
-              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.</p>
+          <div class="item" style="display:flex">
+            <div class="news-img" style="display: grid; height:inherit">
+              <a href="blog-single.html"><img src="assets/images/banner-blog6.jpg" class="img-fluid img-responsive"
+                  alt="news image"></a>
+              <div class="title-wrap">
+                <h4 class="title"><a href="blog-single.html">How to make a quick and easy breakfast?</a></h4>
+                <ul class="admin-list mt-2 mb-4">
+                  <li><a href="#blog"><i class="far fa-user"></i>Mreen Blo
+                    </a></li>
+                  <li><a href="#blog"><i class="far fa-heart"></i>13 Likes</a></li>
+                  <li><a href="#blog"><i class="far fa-comment-dots"></i>6 Comments</a>
+                  </li>
+                </ul>
+                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="item" style="display:flex">
-          <div class="news-img" style="display: grid; height:inherit">
-            <a href="blog-single.html"><img src="assets/images/banner-blog5.jpg" class="img-fluid img-responsive"
-                alt="news image"></a>
-            <div class="title-wrap">
-              <h4 class="title"><a href="blog-single.html">Breakfast with Bun & White cream</a></h4>
-              <ul class="admin-list mt-2 mb-4">
-                <li><a href="#blog"><i class="far fa-user"></i>Allie Gra
-                  </a></li>
-                <li><a href="#blog"><i class="far fa-heart"></i>14 Likes</a></li>
-                <li><a href="#blog"><i class="far fa-comment-dots"></i>7 Comments</a>
-                </li>
-              </ul>
-              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.</p>
+          <div class="item" style="display:flex">
+            <div class="news-img" style="display: grid; height:inherit">
+              <a href="blog-single.html"><img src="assets/images/banner-blog5.jpg" class="img-fluid img-responsive"
+                  alt="news image"></a>
+              <div class="title-wrap">
+                <h4 class="title"><a href="blog-single.html">Breakfast with Bun & White cream</a></h4>
+                <ul class="admin-list mt-2 mb-4">
+                  <li><a href="#blog"><i class="far fa-user"></i>Allie Gra
+                    </a></li>
+                  <li><a href="#blog"><i class="far fa-heart"></i>14 Likes</a></li>
+                  <li><a href="#blog"><i class="far fa-comment-dots"></i>7 Comments</a>
+                  </li>
+                </ul>
+                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="item" style="display:flex">
-          <div class="news-img" style="display: grid; height:inherit">
-            <a href="blog-single.html"><img src="assets/images/banner-blog8.jpg" class="img-fluid img-responsive"
-                alt="news image"></a>
-            <div class="title-wrap">
-              <h4 class="title"><a href="blog-single.html">12 must-eat breakfast egg sandwiches</a></h4>
-              <ul class="admin-list mt-2 mb-4">
-                <li><a href="#blog"><i class="far fa-user"></i>Peg Leg
-                  </a></li>
-                <li><a href="#blog"><i class="far fa-heart"></i>16 Likes</a></li>
-                <li><a href="#blog"><i class="far fa-comment-dots"></i>8 Comments</a>
-                </li>
-              </ul>
-              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.</p>
+          <div class="item" style="display:flex">
+            <div class="news-img" style="display: grid; height:inherit">
+              <a href="blog-single.html"><img src="assets/images/banner-blog8.jpg" class="img-fluid img-responsive"
+                  alt="news image"></a>
+              <div class="title-wrap">
+                <h4 class="title"><a href="blog-single.html">12 must-eat breakfast egg sandwiches</a></h4>
+                <ul class="admin-list mt-2 mb-4">
+                  <li><a href="#blog"><i class="far fa-user"></i>Peg Leg
+                    </a></li>
+                  <li><a href="#blog"><i class="far fa-heart"></i>16 Likes</a></li>
+                  <li><a href="#blog"><i class="far fa-comment-dots"></i>8 Comments</a>
+                  </li>
+                </ul>
+                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="item" style="display:flex">
-          <div class="news-img" style="display: grid; height:inherit">
-            <a href="blog-single.html"><img src="assets/images/banner-blog4.jpg" class="img-fluid img-responsive"
-                alt="news image"></a>
-            <div class="title-wrap">
-              <h4 class="title"><a href="blog-single.html">The plate of rice & cooked meat</a></h4>
-              <ul class="admin-list mt-2 mb-4">
-                <li><a href="#blog"><i class="far fa-user"></i>Teri Dac
-                  </a></li>
-                <li><a href="#blog"><i class="far fa-heart"></i>14 Likes</a></li>
-                <li><a href="#blog"><i class="far fa-comment-dots"></i>4 Comments</a>
-                </li>
-              </ul>
-              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.</p>
+          <div class="item" style="display:flex">
+            <div class="news-img" style="display: grid; height:inherit">
+              <a href="blog-single.html"><img src="assets/images/banner-blog4.jpg" class="img-fluid img-responsive"
+                  alt="news image"></a>
+              <div class="title-wrap">
+                <h4 class="title"><a href="blog-single.html">The plate of rice & cooked meat</a></h4>
+                <ul class="admin-list mt-2 mb-4">
+                  <li><a href="#blog"><i class="far fa-user"></i>Teri Dac
+                    </a></li>
+                  <li><a href="#blog"><i class="far fa-heart"></i>14 Likes</a></li>
+                  <li><a href="#blog"><i class="far fa-comment-dots"></i>4 Comments</a>
+                  </li>
+                </ul>
+                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="item" style="display:flex">
-          <div class="news-img" style="display: grid; height:inherit">
-            <a href="blog-single.html"><img src="assets/images/banner-blog7.jpg" class="img-fluid img-responsive"
-                alt="news image"></a>
-            <div class="title-wrap">
-              <h4 class="title"><a href="blog-single.html">Best foods to take for a company visit</a></h4>
-              <ul class="admin-list mt-2 mb-4">
-                <li><a href="#blog"><i class="far fa-user"></i>Aida Bue
-                  </a></li>
-                <li><a href="#blog"><i class="far fa-heart"></i>10 Likes</a></li>
-                <li><a href="#blog"><i class="far fa-comment-dots"></i>6 Comments</a>
-                </li>
-              </ul>
-              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.</p>
+          <div class="item" style="display:flex">
+            <div class="news-img" style="display: grid; height:inherit">
+              <a href="blog-single.html"><img src="assets/images/banner-blog7.jpg" class="img-fluid img-responsive"
+                  alt="news image"></a>
+              <div class="title-wrap">
+                <h4 class="title"><a href="blog-single.html">Best foods to take for a company visit</a></h4>
+                <ul class="admin-list mt-2 mb-4">
+                  <li><a href="#blog"><i class="far fa-user"></i>Aida Bue
+                    </a></li>
+                  <li><a href="#blog"><i class="far fa-heart"></i>10 Likes</a></li>
+                  <li><a href="#blog"><i class="far fa-comment-dots"></i>6 Comments</a>
+                  </li>
+                </ul>
+                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="item">
-      <div class="news-img">
-        <a href="blog-single.html"><img src="assets/images/banner-blog8.jpg" class="img-fluid img-responsive"
-            alt="news image" /></a>
-        <div class="title-wrap">
-          <h4 class="title">
-            <a href="blog-single.html">12 must-eat breakfast egg sandwiches</a>
-          </h4>
-          <ul class="admin-list mt-2 mb-4">
-            <li>
-              <a href="#blog"><i class="far fa-user"></i>Peg Leg </a>
-            </li>
-            <li>
-              <a href="#blog"><i class="far fa-heart"></i>16 Likes</a>
-            </li>
-            <li>
-              <a href="#blog"><i class="far fa-comment-dots"></i>8 Comments</a>
-            </li>
-          </ul>
-          <p>
-            Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-            amet sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua.
-          </p>
+      <div class="item">
+        <div class="news-img">
+          <a href="blog-single.html"><img src="assets/images/banner-blog8.jpg" class="img-fluid img-responsive"
+              alt="news image" /></a>
+          <div class="title-wrap">
+            <h4 class="title">
+              <a href="blog-single.html">12 must-eat breakfast egg sandwiches</a>
+            </h4>
+            <ul class="admin-list mt-2 mb-4">
+              <li>
+                <a href="#blog"><i class="far fa-user"></i>Peg Leg </a>
+              </li>
+              <li>
+                <a href="#blog"><i class="far fa-heart"></i>16 Likes</a>
+              </li>
+              <li>
+                <a href="#blog"><i class="far fa-comment-dots"></i>8 Comments</a>
+              </li>
+            </ul>
+            <p>
+              Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+              amet sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="item">
-      <div class="news-img">
-        <a href="blog-single.html"><img src="assets/images/banner-blog4.jpg" class="img-fluid img-responsive"
-            alt="news image" /></a>
-        <div class="title-wrap">
-          <h4 class="title">
-            <a href="blog-single.html">The plate of rice & cooked meat</a>
-          </h4>
-          <ul class="admin-list mt-2 mb-4">
-            <li>
-              <a href="#blog"><i class="far fa-user"></i>Teri Dac </a>
-            </li>
-            <li>
-              <a href="#blog"><i class="far fa-heart"></i>14 Likes</a>
-            </li>
-            <li>
-              <a href="#blog"><i class="far fa-comment-dots"></i>4 Comments</a>
-            </li>
-          </ul>
-          <p>
-            Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-            amet sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua.
-          </p>
+      <div class="item">
+        <div class="news-img">
+          <a href="blog-single.html"><img src="assets/images/banner-blog4.jpg" class="img-fluid img-responsive"
+              alt="news image" /></a>
+          <div class="title-wrap">
+            <h4 class="title">
+              <a href="blog-single.html">The plate of rice & cooked meat</a>
+            </h4>
+            <ul class="admin-list mt-2 mb-4">
+              <li>
+                <a href="#blog"><i class="far fa-user"></i>Teri Dac </a>
+              </li>
+              <li>
+                <a href="#blog"><i class="far fa-heart"></i>14 Likes</a>
+              </li>
+              <li>
+                <a href="#blog"><i class="far fa-comment-dots"></i>4 Comments</a>
+              </li>
+            </ul>
+            <p>
+              Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+              amet sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="item">
-      <div class="news-img">
-        <a href="blog-single.html"><img src="assets/images/banner-blog7.jpg" class="img-fluid img-responsive"
-            alt="news image" /></a>
-        <div class="title-wrap">
-          <h4 class="title">
-            <a href="blog-single.html">Best foods to take for a company visit</a>
-          </h4>
-          <ul class="admin-list mt-2 mb-4">
-            <li>
-              <a href="#blog"><i class="far fa-user"></i>Aida Bue </a>
-            </li>
-            <li>
-              <a href="#blog"><i class="far fa-heart"></i>10 Likes</a>
-            </li>
-            <li>
-              <a href="#blog"><i class="far fa-comment-dots"></i>6 Comments</a>
-            </li>
-          </ul>
-          <p>
-            Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-            amet sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua.
-          </p>
+      <div class="item">
+        <div class="news-img">
+          <a href="blog-single.html"><img src="assets/images/banner-blog7.jpg" class="img-fluid img-responsive"
+              alt="news image" /></a>
+          <div class="title-wrap">
+            <h4 class="title">
+              <a href="blog-single.html">Best foods to take for a company visit</a>
+            </h4>
+            <ul class="admin-list mt-2 mb-4">
+              <li>
+                <a href="#blog"><i class="far fa-user"></i>Aida Bue </a>
+              </li>
+              <li>
+                <a href="#blog"><i class="far fa-heart"></i>10 Likes</a>
+              </li>
+              <li>
+                <a href="#blog"><i class="far fa-comment-dots"></i>6 Comments</a>
+              </li>
+            </ul>
+            <p>
+              Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+              amet sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    </div>
-    </div>
-    <button class="prev">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-        class="lucide lucide-chevron-left">
-        <path d="m15 18-6-6 6-6" />
-      </svg>
-    </button>
-    <button class="next">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-        class="lucide lucide-chevron-right">
-        <path d="m9 18 6-6-6-6" />
-      </svg>
-    </button>
+  </div>
+  </div>
+  <button class="prev">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left">
+      <path d="m15 18-6-6 6-6" />
+    </svg>
+  </button>
+  <button class="next">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right">
+      <path d="m9 18 6-6-6-6" />
+    </svg>
+  </button>
   </section>
+  </div>
   <!-- //banner blog section -->
 
   <!-- 2 col section -->
